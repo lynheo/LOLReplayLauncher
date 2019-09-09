@@ -1,0 +1,22 @@
+﻿<Window x:Class="LOLReplayLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOLReplayLauncher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnExe" HorizontalAlignment="Right" Click="BtnExe_Click">롤 실행파일 열기</Button>
+            <TextBlock x:Name="txtExe" HorizontalAlignment="Stretch"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnReplay" HorizontalAlignment="Right" Click="BtnReplay_Click">롤 리플레이 열기</Button>
+            <TextBlock x:Name="txtReplay" HorizontalAlignment="Stretch"></TextBlock>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Play" Click="Play_Click">리플레이 재생</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
